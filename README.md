@@ -4,7 +4,7 @@
 
 * Marca/modelo: Armado
 * Tipo: Desktop
-* Año adquisición: 2015
+* Año adquisición: 2018
 * Procesador:
   * Marca/Modelo: Intel Core i3-8100
   * Velocidad Base: 3.60 GHz
