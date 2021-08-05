@@ -44,6 +44,24 @@
 * Dirección IP (Externa, del ISP): 2800:300:6271:6c70::1
 * Proveedor internet: Entel Chile S.A.
 
+PREGUNTA 2
 
+¿Cómo difiere del gráfico del profesor/ayudante?
+ R:Se puede observar como el grafico se comporta de manera similar al del ayudante, claramente habrá diferencias ya que no es   el mismo computador y no se probaron con las mismas cantidades de matrices, este comportamiento similar se puede observar en ambos gráficos (uso de memoria y tiempo transcurrido).
 
+¿A qué se pueden deber las diferencias en cada corrida?
+ R:Se pueden deber a la potencia de hardware de cada computador, como la memora ram, la cantidad de núcleos y memoria cache del procesador, como también el tamaño de matrices que se probaron, ya que matrices de mayor tamaño necesitaran mayores recursos.
+
+El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser?
+ R:Puede ser debido a la cantidad de memoria que deja reservada para continuar haciendo procesos, ya que al terminar de ejecutar una matriz grande al empezar otra matriz tendrá menor memoria para ocupar por un momento.
+
+¿Qué versión de python está usando?
+ R:3.9.6
+ 
+¿Qué versión de numpy está usando?
+ R:1.21.1
+
+Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen (screenshot) de su uso de procesador durante alguna corrida para confirmar. 
+ R: Como se puede ver se están usando los 4 núcleos del procesador
+ ![image](https://user-images.githubusercontent.com/88348645/128414845-eb59632c-f5e4-4eb4-af60-307d25af9d1c.png)
 
