@@ -63,5 +63,10 @@ El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tie
 
 Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen (screenshot) de su uso de procesador durante alguna corrida para confirmar. 
  R: Como se puede ver se están usando los 4 núcleos del procesador
+ 
  ![image](https://user-images.githubusercontent.com/88348645/128414845-eb59632c-f5e4-4eb4-af60-307d25af9d1c.png)
+ 
+ 
+ ![image](https://user-images.githubusercontent.com/88348645/128416213-c4afa072-7d8e-4a88-9216-aaa80c392212.png)
+
 
