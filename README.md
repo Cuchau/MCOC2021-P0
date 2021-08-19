@@ -68,5 +68,15 @@ Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre 
  
  
  ![image](https://user-images.githubusercontent.com/88348645/128416213-c4afa072-7d8e-4a88-9216-aaa80c392212.png)
+ 
+ Tarea 3 (P0E3)
+ 
+ Durante la corrida de los diferentes programas se observo el uso del procesador y memoria que se utilizaban, mientras corrian los programas en los distintos casos se pudo percibir que tenian un patron, el cual era que mientras mas chica era el tamaño de las matrices, menos procesador y memoria se utilizaban, en cambio cuando el tamaño de las matrices crecian el uso de cpu y memoria aumentaban como se muestra en las siguientes imagenes.
+ 
+ ![single](https://user-images.githubusercontent.com/88348645/129987950-30c94d85-42f1-452e-be56-1dd9a0f61126.png)
+ 
+ ![single2](https://user-images.githubusercontent.com/88348645/129987958-87b816c2-e395-430c-ba24-0cf023a6a39c.png)
+
+Tambien se puede ver como los 4 nucleos del procesador trabajan al mismo tiempo y con practicamente la misma intensidad, esto es debido a que se dividen entre los 4 la tarea de realizar el codigo, realizando calculos simultaneamente, otro aspecto que influye es la memoria cache del procesador, ya que aqui es donde almacena los datos e instrucciones que mas esta utilizando en el momento, por lo cual si mi procesador tuviera mas nucleos y memoria cache, el codigo podria realizarse con mayor rapidez .
 
 
