@@ -87,3 +87,35 @@ Al observar los graficos, se llego a la conclusion que al invertir la matriz tan
 ![longdouble_caso_3](https://user-images.githubusercontent.com/88348645/129989576-0e3720f6-5379-41f3-ba2b-6c1d5b57bc35.png)
  
 esto ocurre para los 4 tipos de datos, pero con longdouble es mas perceptible.
+
+Tarea 4 (P0e4)
+
+En el caso de solve para los datos tipo single se ve para la mayoría de los casos una pequeña mejora en el tiempo, esto puede ser a que los datos tipo single tienen un tamaño menor a los double
+
+![caso solve con tipos de datos double](https://user-images.githubusercontent.com/88348645/130308369-8a6b0512-8781-4f1a-9bb5-75a8947e8e59.png)
+
+![caso solve con tipos de datos single](https://user-images.githubusercontent.com/88348645/130308370-3ca36741-c0fe-408c-b478-b7456c2c4397.png)
+
+
+Pero en ambos tipos de datos se cumple que al ocupar el caso 3 (assume_a= “sym”) se tiene el menor tiempo de ejecución, por lo que es el mas optimo y en este caso el tiempo de ejecución de los datos singles es menor al final.
+
+![comparacion solve double vs single](https://user-images.githubusercontent.com/88348645/130308373-54b12195-dd60-4b38-8269-6759cdeb3dd8.png)
+
+
+En el caso de eigh pasa algo similar que en solve con los datos de tipo double y single, ya que single vuelve a tener menores tiempo de ejecución
+
+![caso eigh con tipo de datos double](https://user-images.githubusercontent.com/88348645/130308374-27feb10b-db3f-4984-8691-838ce3ed881e.png)
+
+![caso eigh con tipo de datos single](https://user-images.githubusercontent.com/88348645/130308376-8cd11761-15e8-4ca5-bfa3-6270b96266ab.png)
+
+
+En ambos casos, el caso 3a y 3b (overwrite_a=False y overwrite_a=True) dan los menores tiempo de espera siendo prácticamente iguales, esto puede deberse en que en estos procesos se lleva muchos más procesos que en el solve, por lo que los tipos de datos no deben influir mucho.
+
+![comparacion eigh double vs single](https://user-images.githubusercontent.com/88348645/130308383-bebd682c-916b-42ef-9803-56391ca4a21c.png)
+
+En el caso de uso de cpu era bastante desigual para solve y eigh, esto puede deberse a la rapidez con la que resolvia las matrices, siendo solve la que más cpu ocupo, esto puede deberse a que se resolvieron matrices de mayor tamaño que en el caso de eigh, esto simplemente se debio a que en el caso de eigh al sobrepasar matrices de tamaño 3000 este se demoraba más de 2 minutos, pero al bajar a 2700 baja considerablemente su tiempo, llegando a tiempos cercanos al minuto con diez segundo.
+
+![cpu_solve_1](https://user-images.githubusercontent.com/88348645/130308454-a22dd626-dd88-4e59-b095-abbfebeff1a3.png)
+![cpu_eigh_1](https://user-images.githubusercontent.com/88348645/130308456-8d3f2cfe-4a1e-4725-9629-9d87e6c7adf1.png)
+
+
