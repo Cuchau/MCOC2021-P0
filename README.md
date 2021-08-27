@@ -121,14 +121,21 @@ En el caso de uso de cpu era bastante desigual para solve y eigh, esto puede deb
 # Tarea 5(P0E5)
 
 ```
-#tipo de dato double, matriz laplaciana llena
+#tipo de dato double, matriz laplaciana dispersa
 def matriz_laplaciana(N, t=double):
     e= sparse.eye(N,dtype=double)-sparse.eye(N,N,1,dtype=double)
     return (e+e.T)
-    
-#tipo de dato double, matriz laplaciana dispersa
+#tipo de dato double, matriz laplaciana llena
 def matriz_laplaciana(N, t=double):
     e= eye(N)-eye(N,N,1)
-    return t(e+e.T)
+    return t(e+e.T)    
 ```
+Se puede observar como la matriz llena al tener que guardar los ceros de la matriz, ósea tener que guardar más información es más lenta al momento de ensamblar las matrices, como al momento de resolver la multiplicación de matrices laplacianos, por esto mismo en el caso de la matriz llena se realizaron cálculos con tamaño de matrices menores a la de matrices dispersa, ya que se demoraban unos 2 minutos aproximadamente en resolver las 10 corridas, en cambio al realizar los cálculos con la matriz dispersa se pudo llegar a tamaño de matrices de 20000 sin problemas, esto posiblemente debido a que no necesitaba utilizar mucha memoria del procesador, ya que solo guarda los valores que no son ceros de la matriz, estos son una cantidad de datos muy chicas comparadas con la cantidad de ceros que si tendría que guardar. En el caso de la multiplicación de matrices sucede lo mismo, es más eficiente el caso de la matriz dispersa que la matriz llena.
+
+#matriz llena
+![grafico_mat_llena](https://user-images.githubusercontent.com/88348645/131186197-2662c48c-5389-4f0c-8514-319ac5a6c581.png)
+
+#matriz dispersa
+![grafico_mat_dispersa](https://user-images.githubusercontent.com/88348645/131186245-4797115c-be95-435f-9efe-e76bb469616a.png)
+
 
