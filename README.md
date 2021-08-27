@@ -118,4 +118,17 @@ En el caso de uso de cpu era bastante desigual para solve y eigh, esto puede deb
 ![cpu_solve_1](https://user-images.githubusercontent.com/88348645/130308454-a22dd626-dd88-4e59-b095-abbfebeff1a3.png)
 ![cpu_eigh_1](https://user-images.githubusercontent.com/88348645/130308456-8d3f2cfe-4a1e-4725-9629-9d87e6c7adf1.png)
 
+# Tarea 5(P0E5)
+
+```
+#tipo de dato double, matriz laplaciana llena
+def matriz_laplaciana(N, t=double):
+    e= sparse.eye(N,dtype=double)-sparse.eye(N,N,1,dtype=double)
+    return (e+e.T)
+    
+#tipo de dato double, matriz laplaciana dispersa
+def matriz_laplaciana(N, t=double):
+    e= eye(N)-eye(N,N,1)
+    return t(e+e.T)
+```
 
