@@ -97,7 +97,7 @@ En el caso de solve para los datos tipo single se ve para la mayoría de los cas
 ![caso solve con tipos de datos single](https://user-images.githubusercontent.com/88348645/130308370-3ca36741-c0fe-408c-b478-b7456c2c4397.png)
 
 
-Pero en ambos tipos de datos se cumple que al ocupar el caso 3 (assume_a= “sym”) se tiene el menor tiempo de ejecución, por lo que es el mas optimo y en este caso el tiempo de ejecución de los datos singles es menor al final.
+Pero en ambos tipos de datos se cumple que al ocupar el caso 3 (assume_a= “pos”) se tiene el menor tiempo de ejecución, por lo que es el mas optimo y en este caso el tiempo de ejecución de los datos singles es menor al final.
 
 ![comparacion solve double vs single](https://user-images.githubusercontent.com/88348645/130308373-54b12195-dd60-4b38-8269-6759cdeb3dd8.png)
 
