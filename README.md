@@ -69,7 +69,7 @@ Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre 
  
  ![image](https://user-images.githubusercontent.com/88348645/128416213-c4afa072-7d8e-4a88-9216-aaa80c392212.png)
  
- #Tarea 3 (P0E3)
+ # Tarea 3 (P0E3)
  
  Durante la corrida de los diferentes programas se observo el uso del procesador y memoria que se utilizaban, mientras corrian los programas en los distintos casos se pudo percibir que tenian un patron, el cual era que mientras mas chica era el tamaño de las matrices, menos procesador y memoria se utilizaban, en cambio cuando el tamaño de las matrices crecian el uso de cpu y memoria aumentaban como se muestra en las siguientes imagenes.
  
@@ -88,7 +88,7 @@ Al observar los graficos, se llego a la conclusion que al invertir la matriz tan
  
 esto ocurre para los 4 tipos de datos, pero con longdouble es mas perceptible.
 
-#Tarea 4 (P0e4)
+# Tarea 4 (P0e4)
 
 En el caso de solve para los datos tipo single se ve para la mayoría de los casos una pequeña mejora en el tiempo, esto puede ser a que los datos tipo single tienen un tamaño menor a los double
 
