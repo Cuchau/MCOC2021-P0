@@ -138,4 +138,32 @@ Se puede observar como la matriz llena al tener que guardar los ceros de la matr
 #matriz dispersa
 ![grafico_mat_dispersa](https://user-images.githubusercontent.com/88348645/131186245-4797115c-be95-435f-9efe-e76bb469616a.png)
 
+# Tarea 6(P0E6)
+
+```
+#tipo de dato double, matriz laplaciana llena
+def matriz_laplaciano(N, t=double):
+       e= eye(N)-eye(N,N,1)
+       return t(e+e.T)
+#tipo de dato double, matriz laplaciana dispersa     
+def matriz_laplaciana(N, t=double):
+    e= sp.eye(N,dtype=double)-sp.eye(N,N,1,dtype=double)
+    return (e+e.T)
+```
+
+Para el caso de solve la matriz llena tiene mayor tiempo de ensamblado y de solución que la matriz dispersa, siendo que la matriz llena llega a tamaño de matrices N de 6500, en cambio la matriz dispersa llega a un tamaño de 20000 sin problemas, con tiempos de ensamblado y solución muy inferiores a los de matrices llenas, manteniendo sus tiempos de solución bastante constantes sim importar el aumento del tamaño de las matrices, en cambio para matrices llenas los tiempo de ensamblado y solución tienden a aumentar con el aumento del tamaño de las matrices.
+
+![matriz_llena_solve](https://user-images.githubusercontent.com/88348645/132042575-aba07c60-d40f-457d-b1ce-89f241129d25.png)
+![matriz_llena_inv](https://user-images.githubusercontent.com/88348645/132042580-e3d14daf-5cf6-4e6d-99f7-ebcdcb3b8f3d.png)
+
+
+Para el caso de inv sucede algo curioso, ya que el tiempo de ensamblado de la matriz llena es mayor al de las matrices dispersas, pero en el tiempo de solución se parecen bastante, incluso las matrices llenas lograron llegar a un N de 5500, en cambio las matrices dispersas solo llegaron a 5000 en el límite de tiempo de 2 minutos, esto se puede deber a que al llegar a un numero de N=100 las matrices llenas disminuyen su tiempo de solución y ensamblaje, después vuelve aumentar con el aumento del tamaño de las matrices, en cambio con las matrices dispersas al llegar a 100 se mantiene constante el tiempo de solución, pero luego sigue aumentando con el aumento del tamaño de las matrices, el tiempo de ensamblaje se mantiene mayormente constante sin importar el tamaño de las matrices. 
+
+![matriz_llena_inv](https://user-images.githubusercontent.com/88348645/132042604-10bec12b-4ede-4abf-bf8d-786f32ab13be.png)
+![matriz_dispersa_inv](https://user-images.githubusercontent.com/88348645/132042610-dd5969bd-5772-45e4-b650-c2fcd16c2cea.png)
+
+
+Por ultimo las corridas para todos los casos son muy estables, por lo que se pudo observar una de cada 10 corridas tiene algún cambio mayor, pero en la mayoría se mantienen bastante cerca y con pocos cambios
+
+    
 
